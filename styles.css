@@ -187,3 +187,27 @@ header h1 {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    background: linear-gradient(45deg, #007BFF, #004080); /* Stylish gradient */
+    padding: 15px;
+    position: relative;
+}
+
+/* Style the logo */
+.logo img {
+    height: 60px; /* Adjust the size */
+    max-width: 100%;
+}
+
+/* Position the navigation */
+nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
