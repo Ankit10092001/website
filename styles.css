@@ -36,6 +36,14 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+/* Ensure body and header styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Style the navigation bar */
 nav {
     background-color: #333;  /* Dark background */
@@ -43,7 +51,7 @@ nav {
     text-align: center;
 }
 
-/* Style the navigation links */
+/* Style navigation links */
 nav a {
     color: white;          /* White text */
     text-decoration: none; /* Remove underline */
@@ -53,8 +61,16 @@ nav a {
     display: inline-block;
 }
 
-/* Change color on hover */
+/* Change color when hovering */
 nav a:hover {
     background-color: #575757;
     border-radius: 5px;
+}
+
+/* Make the navigation bar sticky (optional) */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
