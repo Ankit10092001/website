@@ -74,3 +74,89 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+
+/* Apply a nice background to the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Improve the website header */
+header {
+    background: linear-gradient(to right, #007BFF, #0056b3); /* Blue gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Make the navigation bar look modern */
+nav {
+    background-color: #0056b3;  /* Dark blue */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style navigation links */
+nav a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #004494;
+    border-radius: 5px;
+}
+
+/* Style main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Improve news list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #007BFF;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Style images */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Make website responsive */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+}
