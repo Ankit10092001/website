@@ -74,3 +74,56 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* Style Latest News Section */
+main {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Latest News Heading */
+main h2 {
+    color: #0056b3;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* News List Styling */
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each News Item */
+main li {
+    background: #f8f9fa;
+    padding: 12px;
+    margin: 8px 0;
+    border-left: 5px solid #007BFF;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+/* Links inside News List */
+main a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0056b3;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s;
+}
+
+/* Hover Effects */
+main li:hover {
+    background: #e3f2fd;
+    transform: scale(1.03);
+}
+
+main a:hover {
+    color: #ff4500; /* Orange color on hover */
+}
