@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,85 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-.news article {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
-}
-
-/* Ensure body and header styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Style the navigation bar */
-nav {
-    background-color: #007BFF;  /* Blue background */
-    padding: 10px;
-    text-align: center;
-}
-
-/* Style navigation links */
-nav a {
-    color: white;          /* Black text */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
-    margin: 0 15px;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-/* Change color when hovering */
-nav a:hover {
-    background-color: #0056b3;  /*Dark blue on hover*/
-    border-radius: 5px;
-}
-
-/* Make the navigation bar sticky (optional) */
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Apply a nice background to the whole page */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;  /* Light gray background */
-    margin: 0;
-    padding: 0;
-}
-
-/* Improve the website header */
+/* Header */
 header {
     background: linear-gradient(to right, #007BFF, #0056b3); /* Blue gradient */
     color: white;
@@ -91,15 +14,26 @@ header {
     text-align: center;
 }
 
-/* Make the navigation bar look modern */
+/* Navigation Bar */
 nav {
     background-color: #0056b3;  /* Dark blue */
     text-align: center;
     padding: 10px 0;
 }
 
-/* Style navigation links */
-nav a {
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     font-size: 18px;
     padding: 12px 20px;
@@ -108,13 +42,13 @@ nav a {
     transition: background 0.3s;
 }
 
-/* Hover effect */
-nav a:hover {
+/* Hover Effect */
+nav ul li a:hover {
     background-color: #004494;
     border-radius: 5px;
 }
 
-/* Style main content */
+/* Main Content */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -124,7 +58,7 @@ main {
     border-radius: 10px;
 }
 
-/* Improve news list */
+/* News List */
 ul {
     list-style: none;
     padding: 0;
@@ -139,20 +73,33 @@ li {
 }
 
 li:hover {
-    transform: scale(1.02); /* Slight zoom effect */
+    transform: scale(1.02);
 }
 
-/* Style images */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Images */
 img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-/* Make website responsive */
+/* Responsive Design */
 @media (max-width: 600px) {
-    nav a {
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     main {
