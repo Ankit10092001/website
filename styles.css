@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset and base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styling */
+/* Header styles */
 header {
     background: linear-gradient(to right, #007BFF, #0056b3);
     color: white;
@@ -14,14 +14,14 @@ header {
     text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation styles */
 nav {
     background-color: #0056b3;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-/* Navigation Links */
+/* Navigation links */
 nav ul {
     list-style: none;
     padding: 0;
@@ -29,38 +29,48 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;  /* Ensure the text is white */
+    color: white; /* Ensure text is visible */
     font-size: 18px;
-    padding: 12px 20px;
+    padding: 10px 15px;
     text-decoration: none;
     display: inline-block;
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Hover Effect */
-nav ul li a:hover {
-    background-color: #004494;
+    background: transparent;
     border-radius: 5px;
 }
 
-/* Ensure Proper Visibility */
-nav ul li {
-    background: none; /* Remove unwanted backgrounds */
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #004494;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        text-align: center;
-    }
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
     nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 }
