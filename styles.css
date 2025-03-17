@@ -36,3 +36,25 @@ footer {
     color: white;
     margin-top: 20px;
 }
+/* Style the navigation bar */
+nav {
+    background-color: #333;  /* Dark background */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the navigation links */
+nav a {
+    color: white;          /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
